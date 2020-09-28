@@ -1,0 +1,46 @@
+.case .case-header {
+    margin-top: 30px;
+}
+
+.case .case-c .case-nav {
+    float: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.case .case-item:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width:768px) {
+    /* 成功案例 */
+    .case .case-header {
+        margin-top: 50px;
+        height: auto;
+    }
+    .case .case-header .eff {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+    .case .eff::after {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .case .case-nav {
+        float: none;
+    }
+    .case .case-nav .case-item {
+        /* width: 25%!important; */
+        margin-left: 0;
+    }
+    .case .swiper {
+        height: auto;
+    }
+    .case .swiper .slide {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        height: 293px;
+    }
+}

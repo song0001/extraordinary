@@ -1,0 +1,253 @@
+    @media screen and (max-width:768px) {
+        .header {
+            display: none;
+        }
+        /* 版心 */
+        .w {
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        /* 移动端导航 */
+        .header-m {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 60px;
+            z-index: 20;
+            background-color: #fff;
+        }
+        .header-m .logo {
+            float: left;
+            width: 110px;
+            height: 100%;
+            background: url(../img/logo.png) no-repeat center;
+        }
+        .header-m .btn {
+            float: right;
+            width: 60px;
+            height: 60px;
+            /* transition: .5s; */
+        }
+        .header-m span {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #333333;
+            margin: 10px auto;
+        }
+        .header-m .btn.act {
+            transform: rotate(45deg);
+        }
+        .header-m .btn.act span:first-child {
+            transform: translateY(12px) rotate(-90deg);
+        }
+        .header-m .btn.act span:nth-child(3) {
+            display: none;
+        }
+        .header-m .btn.act span:nth-child(3) {
+            transform: translateY(-12px) rotate(90deg);
+        }
+        .header-m span:first-child {
+            margin-top: 20px;
+        }
+        .header-m-nav {
+            display: none;
+            margin-top: 60px;
+            width: 100%;
+            height: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 20;
+            background-color: #fff;
+            transition: .5s;
+        }
+        .header-m-nav .nav-item {
+            width: 95%;
+            margin: 0 auto;
+            height: 40px;
+            font-size: 13px;
+            color: gray;
+            text-indent: 20px;
+            line-height: 40px;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+        .banner {
+            margin-top: 60px;
+            width: 100%;
+            height: 215px;
+            overflow: hidden;
+            /* margin: 0 auto; */
+        }
+        .banner .wrap {
+            width: 400%;
+            height: 100%;
+        }
+        .content1 {
+            width: 100%;
+            height: auto;
+            margin-bottom: 100px;
+        }
+        .content1 .ad {
+            top: 0;
+            height: auto;
+            padding-bottom: 43px;
+        }
+        .content1 .ad .ad-item {
+            float: left;
+            width: 50%;
+            height: 33%;
+            text-align: center;
+        }
+        .content1 .text,
+        .content2 .text {
+            width: 100%;
+            margin-top: 0;
+            height: auto;
+            text-align: center;
+        }
+        .content1 .phone,
+        .content2 .pc {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 80px;
+            height: auto;
+        }
+        .content2 {
+            width: 100%;
+            height: auto;
+            padding-bottom: 100px;
+        }
+        .content1 .text p.p1,
+        .content2 .text p.p1 {
+            margin-top: 0;
+        }
+        .content2 .text p.p2,
+        .content1 .text p.p2 {
+            margin-bottom: 20px;
+        }
+        .content1 .text p.p3,
+        .content2 .text p.p3 {
+            margin: 0 auto;
+        }
+        .content2 table,
+        .content1 table {
+            width: 80%;
+            margin: 0 auto;
+        }
+        /* 内容2样式 */
+        .content2-c {
+            width: 100%;
+            height: 100%;
+        }
+        .case {
+            height: auto;
+        }
+        .content2 .pc {
+            height: auto;
+        }
+        .content2 .pc img:nth-child(1) {
+            width: 100%;
+        }
+        .content2 .pc img:nth-child(2) {
+            width: 100%;
+        }
+        /* 成功案例 */
+        .case .case-header {
+            margin-top: 50px;
+            height: auto;
+        }
+        .case .case-header .eff {
+            margin: 0 auto;
+            float: none;
+            text-align: center;
+        }
+        .case .eff::after {
+            display: block;
+            margin-bottom: 30px;
+        }
+        .case .case-nav {
+            float: none;
+        }
+        .case .case-nav .case-item {
+            width: 25%!important;
+            margin-left: 0;
+        }
+        .case .swiper {
+            height: auto;
+        }
+        .case .swiper .slide {
+            float: none;
+            margin: 0 auto;
+            width: 100%;
+            height: 293px;
+        }
+        /* 关于我们 */
+        .about {
+            width: 100%;
+            height: auto;
+            margin-bottom: 120px;
+        }
+        .about .about-block {
+            width: 100%;
+            height: auto;
+        }
+        .about .about-r,
+        .about .about-l {
+            float: none;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .about .about-l p {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about .about-l {
+            margin-bottom: 30px;
+        }
+        .about .about-l .des {
+            font-size: 15px;
+            color: #959595;
+            width: 100%;
+            margin-top: 35px;
+            line-height: 28px;
+        }
+        .about .about-r img {
+            position: sticky;
+            width: 100%;
+            height: auto;
+        }
+        /* 底部 */
+        .footer {
+            height: auto;
+            text-align: center;
+        }
+        .footer .footer-t {
+            height: auto;
+        }
+        .footer .footer-t .r {
+            display: block;
+        }
+        .footer ul {
+            height: auto;
+            margin-bottom: 50px;
+        }
+        .footer ul li {
+            /* margin-right: 0; */
+            margin: 0 auto;
+            float: none;
+        }
+        .footer ul li p {
+            height: auto;
+        }
+        .footer li:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }

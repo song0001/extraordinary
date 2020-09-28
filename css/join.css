@@ -1,0 +1,96 @@
+/* 职位介绍 */
+
+.job {
+    height: auto;
+    overflow: hidden;
+}
+
+.job .job-item {
+    margin: 50px auto;
+    height: 350px;
+}
+
+.job .job-item .line {
+    width: 100%;
+    height: 2px;
+    background: #e5e5e5;
+    margin-bottom: 30px;
+}
+
+.job .job-item img,
+.job .job-item .intro {
+    float: left;
+}
+
+.job .job-item .intro {
+    margin-left: 95px;
+}
+
+.job .intro h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.job .intro ol {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.job .intro ol li {
+    line-height: 25px;
+    color: #525252;
+    height: 25px;
+    font: 14px '微软雅黑', Arial, '宋体';
+}
+
+.job .email {
+    color: #525252;
+    font-size: 18px;
+    font-weight: bolder;
+    text-indent: 350px;
+    margin-top: 35px;
+    margin-bottom: 135px;
+}
+
+
+/* 响应式布局 */
+
+@media screen and (max-width:768px) {
+    .job .job-item {
+        float: none;
+        height: auto;
+    }
+    .job .job-item img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .job {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .job .job-item .line {
+        margin-bottom: 30px;
+    }
+    .job .job-item .intro {
+        margin-left: 0;
+        float: none;
+    }
+    .job .job-item .intro-t {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    .job .intro h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .job .intro ol li {
+        height: auto;
+    }
+    .job .email {
+        text-align: center;
+        text-indent: 0;
+    }
+}

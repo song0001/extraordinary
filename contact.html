@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="js/wow.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header wow fadeInDown">
+        <div class="header-c w">
+            <div class="logo"></div>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="index.html">首页</a>
+                    <span></span>
+
+                </div>
+                <div class="nav-item">
+                    <a href="case.html">项目案例</a>
+                    <span></span>
+
+                </div>
+                <div class="nav-item">
+                    <a href="join.html">加入我们</a>
+                    <span></span>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html">联系我们</a>
+                    <span class="act"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端导航 -->
+    <div class="header-m wow fadeInDown">
+        <div class="logo"></div>
+        <a href="javascript:;" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <div class="header-m-nav">
+        <div class="nav-item">
+            <a href="index.html">首页</a>
+        </div>
+        <div class="nav-item">
+            <a href="case.html">项目案例</a>
+        </div>
+        <div class="nav-item">
+            <a href="join.html">加入我们</a>
+        </div>
+        <div class="nav-item">
+            <a href="contact.html">联系我们</a>
+        </div>
+    </div>
+    <!-- 关于不凡科技 -->
+    <div class="des">
+        <h2 class="wow fadeInUp">关于不凡科技</h2>
+        <p class="wow fadeInUp" data-wow-delay=".3s">bufan</p>
+    </div>
+    <div class="about">
+        <div class="about-c w">
+            <ul class="list">
+                <li class="list-item">
+                    <div class="list-item-t wow fadeInUp">优势</div>
+                    <div class="list-item-p wow fadeInUp">提供全方位网站建立+数字化营销服务，2016年至今已经服务100余家客户。 我们可以完成优质网站建设的同时，更可为您提供增值的数字化营销服务。不凡科技对客户和作品永远坚持宁缺毋滥的原则, 没有把网站纳入到企业战略高度的客户我们拒绝承接！</div>
+                </li>
+                <li class="list-item">
+                    <div class="list-item-t wow fadeInUp">理念</div>
+                    <div class="list-item-p wow fadeInUp">我们致力于用户体验的持续提升，以用户为中心，力求视觉设计与交互设计的完美契合。并且我们以科学规范的流程，勤奋专注的态度，为客户提供全方位的设计服务。专注UI设计，以设计驱动企业价值的持续增长，实现您的商业目标！</div>
+                </li>
+                <li class="list-item">
+                    <div class="list-item-t wow fadeInUp">团队</div>
+                    <div class="list-item-p wow fadeInUp">我们的团队成员由资深设计师、资深前端工程师及技术负责人、开发工程师等组成。团队成员均有在大型互联网工作经验。我们是追求品质与力求不断超越自己的团队，我们尊重每次合作的机会与挑战力求完美。</div>
+                </li>
+            </ul>
+            <!-- 地图 -->
+            <div class="wow fadeInUp" id="allmap">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer clear" data-wow-delay="1500ms">
+        <div class=" footer-t ">
+            <div class="footer-b-c w ">
+                <p class="l wow fadeInUp">联系我们</p>
+                <p class="r wow fadeInUp">Contact Us</p>
+                <ul class="clear wow fadeInUp">
+                    <li class="wow fadeInUp">
+                        <img src="http://www.bufantec.com/pages/tec/static/img/logo-black.png " alt=" ">
+                        <p>郑州不凡科技有限公司</p>
+                    </li>
+                    <li class="wow fadeInUp" data-wow-delay="0.3s">
+                        <p>地址：郑东新区绿地新都会6号楼1210</p>
+                        <p>电话：0371-55602883</p>
+                        <p>手机：18838180363</p>
+                    </li>
+                    <li class="wow fadeInUp" data-wow-delay="0.5s">
+                        <p>路线：地铁1号线 东风南路站C口出向北步行300米(近郑州东站)</p>
+                        <p>郵编：450000</p>
+                        <p>邮箱：bd@bufanui.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-b ">
+            <div class="footer-t-c w ">
+                <p class="wow fadeInUp">©2017不凡科技 郑州IT技术服务 豫ICP备17015347号</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/common1.js"></script>
+    <script>
+        // 启动动画
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=js7AGWN1lo6DIZB9HQLN753gDHA9rRZr"></script>
+
+    <script>
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(113.754407, 34.776794);
+        map.centerAndZoom(point, 15);
+        //创建logo
+        var pt = new BMap.Point(113.774507, 34.776794);
+        var myIcon = new BMap.Icon("img/logo.png", new BMap.Size(300, 157));
+        var marker2 = new BMap.Marker(pt, {
+            icon: myIcon
+        }); // 创建标注
+        marker2.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+        map.addOverlay(marker2); // 将标注添加到地图中
+    </script>
+</body>
+
+</html>
